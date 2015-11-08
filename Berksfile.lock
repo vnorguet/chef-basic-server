@@ -1,0 +1,65 @@
+DEPENDENCIES
+  apt
+  basic-server
+    path: .
+    metadata: true
+  build-essential
+  git
+  nginx
+  prezto
+    git: git://github.com/leifcr/chef-prezto.git
+    revision: 7689e0e36e71b108cb52988e7cb05e522ac4824f
+  ssh_authorized_keys (~> 0.2.0)
+  ssh_known_hosts
+  sudo (~> 2.7.2)
+  user-ssh-keys (~> 1.0.2)
+  vim
+  zsh
+
+GRAPH
+  apt (2.8.1)
+  basic-server (0.1.9)
+    git (>= 0.0.0)
+    prezto (>= 0.0.0)
+    ssh_authorized_keys (>= 0.0.0)
+    sudo (>= 0.0.0)
+    user-ssh-keys (>= 0.0.0)
+    zsh (>= 0.0.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.2.3)
+  chef_handler (1.2.0)
+  dmg (2.2.2)
+  git (4.3.3)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  nginx (2.7.6)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  ohai (2.0.1)
+  packagecloud (0.0.19)
+  partial_search (1.0.8)
+  prezto (0.1.4)
+    git (>= 0.0.0)
+    zsh (>= 0.0.0)
+  rsyslog (2.1.0)
+  runit (1.7.2)
+    packagecloud (>= 0.0.0)
+  ssh_authorized_keys (0.2.0)
+  ssh_known_hosts (2.0.0)
+    partial_search (>= 0.0.0)
+  sudo (2.7.2)
+  user-ssh-keys (1.0.2)
+  vim (1.1.2)
+  windows (1.38.1)
+    chef_handler (>= 0.0.0)
+  yum (3.6.3)
+  yum-epel (0.6.2)
+    yum (~> 3.2)
+  zsh (1.0.1)
